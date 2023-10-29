@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>山东亚辰医药供应商流向系统</title>
+<meta name="description" content="登录界面">
+<meta name="keywords" content="登录界面">
+<link href="" rel="stylesheet">
+<style>
+	body,p,div,ul,li,h1,h2,h3,h4,h5,h6{
+		margin:0;
+		padding: 0;
+	}
+	body{
+		background: #e1e1e1; 
+	}
+	#login{
+		width: 400px;
+		height: 250px;
+		background-color: rgba(31, 31, 31, 0.3);
+		margin:300px auto;
+		position: relative;
+		
+	}
+	#login b{
+		text-align:center;
+		color: #fff;
+		font-size:13px;
+		
+	}
+	form{
+		box-shadow: #5f5f5f 10px 30px 30px 10px;
+	}
+	#login form p{
+		text-align: center;
+	}
+	#user{
+		background:url(images/user.png) rgba(0,0,0,.1) no-repeat;
+		width: 200px;
+		height: 30px;
+		border:solid #518081 1px;
+		border-radius: 3px;
+		padding-left: 32px;
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+	#pwd{
+		background: url(images/pwd.png) rgba(0,0,0,.1) no-repeat;
+		width: 200px;
+		height: 30px;
+		border:solid #518081 1px;
+		border-radius: 3px;
+		padding-left: 32px;
+		margin-bottom: 30px;
+	}
+	#submit{
+		width: 232px;
+		height: 30px;
+		background: rgba(43, 87, 131, 0.5);
+		border:solid #518081 1px;
+		border-radius: 3px;
+		color: #fff;
+	}
+	#submit:hover{
+		cursor: pointer;
+		background:#D8D8D8;
+	}
+	input{
+		color: #fff;
+	}
+</style>
+</head>
+<body>
+	<img src="./images/11.png"  width="200px" style="position: absolute;margin-left: 200px;margin-top: -300px;">
+<div id="login">
+
+	<form action="" method="post">
+		<p><input type="text" name="user" id="user" placeholder="请输入用户名" value=""  onkeydown="var e=window.event || arguments[0];if(e.keyCode==13){ check() }"></p>
+		<p><input type="password" name="passw0rd" id="pwd" placeholder="请输入密码" value=""  onkeydown="var e=window.event || arguments[0];if(e.keyCode==13){ check() }"></p>
+		<p><input type="button" id="submit" value="登录" onclick="check()"></p>
+		<br>
+		<p class="bd"><b>山东亚辰医药供应商流向系统</b>	</p>
+	</form>
+</div>
+
+<script src="./js/style.js"></script>
+<script>
+var btn = document.getElementsByClassName('layui-btn-sm')[0];
+var url = './xz.html';
+check = function () {
+			if (user.value == '10228' && pwd.value == 'yushu19900922') {
+				window.location = url;
+			}else{
+				alert('账号或密码错误！');
+			}
+			
+		};
+</script>
+</body>
+</html>
